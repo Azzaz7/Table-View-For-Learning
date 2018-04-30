@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Ios_Ex" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="oqV-i1-Xuf">
+                                <rect key="frame" x="0.0" y="175" width="375" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="543428943.53277099">
+                                    <!--2018-03-22 16:29:03 +0000-->
+                                </date>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RfK-Hm-wfX">
+                                <rect key="frame" x="118" y="440" width="138" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="PIv-eE-yBY"/>
+                                    <constraint firstAttribute="width" constant="138" id="e8u-Gv-PV1"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="disPlayDate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RVp-7B-0wj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="oqV-i1-Xuf" secondAttribute="trailing" id="1xm-SD-bcT"/>
+                            <constraint firstItem="oqV-i1-Xuf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3QO-8K-iVy"/>
+                            <constraint firstItem="RfK-Hm-wfX" firstAttribute="top" secondItem="oqV-i1-Xuf" secondAttribute="bottom" constant="49" id="60c-YT-jkX"/>
+                            <constraint firstItem="oqV-i1-Xuf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="155" id="D1t-Ws-f4Y"/>
+                            <constraint firstItem="oqV-i1-Xuf" firstAttribute="centerX" secondItem="RfK-Hm-wfX" secondAttribute="centerX" id="elh-Yd-trI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="datePicker" destination="oqV-i1-Xuf" id="Azg-J2-sjn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-98.400000000000006" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+</document>
